@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="conceptosejemplo.com.conceptosejemplo"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="23" />
+
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name="conceptosejemplo.com.conceptosejemplo.activities.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name="conceptosejemplo.com.conceptosejemplo.managers.TimerManager" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="conceptosejemplo.com.conceptosejemplo.activities.MenuList"
+            android:label=""
+            android:theme="@style/Theme.AppCompat.NoActionBar" >
+        </activity>
+        <activity
+            android:name="conceptosejemplo.com.conceptosejemplo.activities.ProductsList"
+            android:label=""
+            android:theme="@style/Theme.AppCompat.NoActionBar" >
+        </activity>
+        <activity
+            android:name="conceptosejemplo.com.conceptosejemplo.activities.MakeYourCombo"
+            android:label=""
+            android:theme="@style/Theme.AppCompat.NoActionBar" >
+        </activity>
+        <activity
+            android:name="conceptosejemplo.com.conceptosejemplo.activities.EmployeesPayroll"
+            android:label=""
+            android:theme="@style/Theme.AppCompat.NoActionBar" >
+        </activity>
+        <activity
+            android:name="conceptosejemplo.com.conceptosejemplo.activities.PizzaCustom"
+            android:label=""
+            android:theme="@style/Theme.AppCompat.NoActionBar" >
+        </activity>
+        <activity
+            android:name="conceptosejemplo.com.conceptosejemplo.activities.UserConnection"
+            android:label=""
+            android:theme="@style/Theme.AppCompat.NoActionBar" >
+        </activity>
+        <activity
+            android:name="conceptosejemplo.com.conceptosejemplo.facade.DailyInfoFacade"
+            android:label=""
+            android:theme="@style/Theme.AppCompat.NoActionBar" >
+        </activity>
+    </application>
+
+</manifest>
